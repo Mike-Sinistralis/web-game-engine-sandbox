@@ -9,6 +9,7 @@ import StyleRoot from 'theme/root';
 import Babylon from './Babylon';
 import Phaser from './Phaser';
 import Three from './Three';
+import ReactThree from "./ReactThree/index.jsx";
 
 function GameRouter() {
   return (
@@ -21,6 +22,7 @@ function GameRouter() {
           <Route path="/Babylon" element={<Babylon />} />
           <Route path="/Phaser" element={<Phaser />} />
           <Route path="/Three" element={<Three />} />
+          <Route path="/ReactThree" element={<ReactThree />} />
           <Route
             path="*"
             element={<Navigate to="/Babylon" />}
